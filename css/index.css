@@ -1,0 +1,193 @@
+body
+{
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;  
+    /* background-image: url('/images/backcover.svg');
+    background-repeat: no-repeat; 
+    background-size: 1300px 653px;
+    background-position: right 183% top 0%;
+    background-attachment: fixed; */
+    
+}
+.main-div
+{
+    width: 100vw;    
+    
+}    
+/* ------nav------*/
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+nav img
+{
+    margin-left: 65px;
+}
+.nav-item
+{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #0000ff;
+}
+.nav-item:hover
+{
+    cursor: pointer;
+}
+.nav-items
+{
+    padding-top: 15px;
+    margin-left: 280px;
+}
+.signin-btn
+{
+    font-size: 13px;
+    border-radius: 30px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0px;
+    color: #ffffff;
+    background: linear-gradient(217deg, #ed049ccc, #ff000000 70.71%),
+                linear-gradient(127deg, #1d028bcc, #00ff0000 70.71%),
+                linear-gradient(336deg, #ff00bbcc, #0000ff00 70.71%);
+}
+.menu
+{
+    display: none;
+}
+/* ------intro-section------*/
+.intro-section
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+/* ---------------------left section---------------- */
+.left-section
+{
+    margin-top: 50px;
+}
+.left-section h1
+{
+    font-family: sans-serif;
+    font-size: 61px;
+    color: #0000ff;
+}
+.left-section h4
+{
+  color: #808080;
+}
+.learn-more-btn
+{
+    
+    border-radius: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #ffffff ;
+    font-size: 20px;
+    background: linear-gradient(217deg, #ed049ccc, #ff000000 70.71%),
+                linear-gradient(127deg, #1d028bcc, #4000ff00 70.71%),
+                linear-gradient(336deg, #ff00bbcc, #0000ff00 70.71%);
+    border: 0px;
+} 
+/* ---------------------right section---------------- */
+.imgs-div img:last-child
+{ 
+    
+    height: 60vh;
+}
+.vector-dot
+{
+    margin-bottom: 90px;
+    margin-left: -40px;
+}
+/* -----------------------------------------------@media screen---------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    /* -------------------nav-------------------- */
+    nav img
+    {
+        margin-left: 0px;
+    }
+    .nav-items
+    {
+        padding-top: 15px;
+        margin-left: 0px;
+    } 
+}
+/* -----------------------------------------------@media screen---------------------------------------- */
+@media screen and (max-width: 768px)
+{
+      /* -------------------nav-------------------- */
+    nav
+    {
+        justify-content: space-around;
+    }
+    nav img
+    {
+        margin-left: 0px;
+    }
+    .nav-items,.signin-btn
+    {
+        display: none;
+    }
+    .menu
+    {
+        display: block;
+    }
+}
+/* -----------------------------------------------@media screen---------------------------------------- */
+@media screen and (max-width: 600px)
+{
+    /* ---------------- left-section---------------- */
+    .left-section h1
+    {
+        font-size: 40px;
+    }
+    .left-section h4
+    {
+        font-size: 12px;
+    }
+    .learn-more-btn
+    {
+        font-size: 13px;
+    }
+      /* ----------right section------------ */
+    .imgs-div img:last-child
+    {
+        height: 40vh;
+    }
+    .vector-img
+    {
+        width: 50px;
+    }
+    .vector-dot
+    {
+        width: 10px;
+        margin-bottom: 40px;
+        margin-left: -28px;
+    }
+    
+}
+/* -----------------------------------------------@media screen---------------------------------------- */
+@media screen and (max-width: 350px)
+{
+    /* ----------right section------------ */
+    .vector-img
+    {
+        display: none;
+    }
+    .vector-dot
+    {
+        display: none;
+    }
+}
